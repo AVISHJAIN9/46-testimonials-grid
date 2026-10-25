@@ -1,0 +1,29 @@
+{
+  "name": "testimonials-grid",
+  "version": "1.0.0",
+  "description": "Polished Testimonials Grid & Infinite Ticker with Glassmorphism, 3D Tilt, and LocalStorage",
+  "type": "module",
+  "main": "testimonial.js",
+  "scripts": {
+    "start": "npx serve -l 5181 .",
+    "docs:dev": "vitepress dev docs --port 5182",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --port 5182"
+  },
+  "keywords": [
+    "testimonials",
+    "glassmorphism",
+    "css3",
+    "3d-tilt",
+    "localstorage",
+    "marquee"
+  ],
+  "author": "Avish Jain",
+  "license": "MIT",
+  "devDependencies": {
+    "mermaid": "^11.17.2",
+    "serve": "^14.2.6",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
