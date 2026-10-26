@@ -1,0 +1,65 @@
+/* Pure Black Dark Theme for VitePress */
+:root {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+}
+
+.dark {
+  --vp-c-bg: #000000 !important;
+  --vp-c-bg-alt: #000000 !important;
+  --vp-c-bg-elv: #0a0a0a !important;
+  --vp-c-bg-soft: #0a0a0a !important;
+  --vp-sidebar-bg-color: #000000 !important;
+  --vp-nav-bg-color: rgba(0, 0, 0, 0.8) !important;
+  
+  --vp-c-border: #222222 !important;
+  --vp-c-divider: #1a1a1a !important;
+  
+  --vp-c-text-1: #f3f4f6 !important;
+  --vp-c-text-2: #9ca3af !important;
+  --vp-c-text-3: #6b7280 !important;
+}
+
+/* Contrast enhancement for tables in dark mode */
+.dark table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+  border: 1px solid #262626;
+}
+
+.dark th {
+  background-color: #0d0d0d;
+  color: #60a5fa;
+  border: 1px solid #262626;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+.dark td {
+  border: 1px solid #1f1f1f;
+  padding: 0.75rem 1rem;
+  background-color: #000000;
+}
+
+.dark tr:nth-child(2n) td {
+  background-color: #050505;
+}
+
+/* Code block borders and styling */
+.dark div[class*='language-'] {
+  border: 1px solid #1f1f1f;
+  background-color: #050505 !important;
+}
+
+/* Mermaid diagrams background */
+.dark .mermaid {
+  background-color: #000000 !important;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #1f1f1f;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}

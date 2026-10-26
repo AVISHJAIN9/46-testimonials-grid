@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polished Testimonials</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="testimonials.css">
+    <script src="testimonial.js"></script>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="form-container">
+            <h1>Share Your Story</h1>
+            
+            <form id="testimonial-form">
+                
+                <div class="form-group image-upload-group">
+                    <label>Profile Photo</label>
+                    <img id="image-preview" src="https://placehold.co/100x100/E2E8F0/4A5568?text=Photo" alt="Profile image preview">
+                    <input type="file" id="image-upload" accept="image/png, image/jpeg, image/gif">
+                    <label for="image-upload" class="file-upload-label">
+                        Choose an Image
+                    </label>
+                </div>
+                
+                <div class="form-group form-field">
+                    <input type="text" id="user-name" placeholder=" " required>
+                    <label for="user-name">Your Name</label>
+                </div>
+
+                <div class="form-group star-rating-group">
+                    <label>Your Rating</label>
+                    <div class="star-rating-input">
+                        <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+
+                <div class="form-group form-field">
+                    <textarea id="testimonial-text" rows="5" placeholder=" " required></textarea>
+                    <label for="testimonial-text">Your Testimonial</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Testimonial</button>
+                <p id="message-area"></p>
+
+            </form>
+        </div>
+        
+        <div class="testimonial-ticker" id="ticker-section">
+            <div class="ticker-header">
+                <h2>What Our Users Say</h2>
+                <button id="clear-all-btn" class="clear-btn">Clear All</button>
+            </div>
+            <div class="scroller-window">
+                <div class="scroller-track" id="scroller-track">
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
